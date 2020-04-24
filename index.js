@@ -5,10 +5,11 @@ const //imports
 
 app.set('trust proxy');
 
+//get current ip
 app.get("/ip", (req, res) => {
-
-    res.json(req.ip);
-
+    res.json({
+        ip: req.ip.split("::ffff:")[1]
+    });
 });
 
 app.get("/", (req, res) => {
