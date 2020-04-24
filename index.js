@@ -7,10 +7,14 @@ app.set('trust proxy');
 
 app.get("/ip", (req, res) => {
 
-    console.log(1)
+    res.json(req.ip);
 
 });
 
-app.listen(3000, function() {
-    console.log('Example app listening on port 3000!');
+app.get("/", (req, res) => {
+    res.send("Pino says hello");
+});
+
+const listener = app.listen(3000, () => {
+    console.log(`IP-Server listening on port ${listener.address().port}`);
 });
