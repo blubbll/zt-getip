@@ -1,0 +1,25 @@
+{
+  "name": "zt-getip",
+  "version": "1.0.0",
+  "description": "get current ip",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blubbll/zt-getip.git"
+  },
+  "keywords": [
+    "zerotier"
+  ],
+  "author": "Blubbll",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blubbll/zt-getip/issues"
+  },
+  "homepage": "https://github.com/blubbll/zt-getip#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
